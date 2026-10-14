@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="General">
+        <entry name="token" type="String">
+            <default></default>
+        </entry>
+        <entry name="clientId" type="String">
+            <default></default>
+        </entry>
+        <entry name="clientSecret" type="String">
+            <default></default>
+        </entry>
+        <entry name="refreshToken" type="String">
+            <default></default>
+        </entry>
+        <entry name="redirectUri" type="String">
+            <default>https://httpbin.org/get</default>
+        </entry>
+        <entry name="selectedDeviceId" type="String">
+            <default></default>
+        </entry>
+        <entry name="pollSeconds" type="Int">
+            <default>30</default>
+        </entry>
+    </group>
+</kcfg>

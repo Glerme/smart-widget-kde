@@ -1,0 +1,7 @@
+dist/
+test/out/
+__pycache__/
+*.qmlc
+*.jsc
+# Credenciais do app OAuth nunca vão para o repositório.
+*oauth*.json

@@ -1,0 +1,21 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Gui Felipe"
+            }
+        ],
+        "Category": "Utilities",
+        "Description": "Controle dos dispositivos SmartThings pelo painel",
+        "EnabledByDefault": true,
+        "Icon": "go-home-symbolic",
+        "Id": "io.github.gui.smartthings",
+        "License": "MIT",
+        "Name": "SmartThings",
+        "Version": "1.1.0",
+        "Website": "https://github.com/Glerme/smart-widget-kde",
+        "BugReportUrl": "https://github.com/Glerme/smart-widget-kde/issues"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
