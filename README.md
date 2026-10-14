@@ -3,7 +3,7 @@
 Widget do painel do KDE Plasma 6 para controlar dispositivos Samsung SmartThings: ar-condicionado, luzes, tomadas, TVs e o que mais estiver na sua conta.
 
 <p align="center">
-  <img src="docs/screenshots/panel.png" alt="Widget no painel mostrando o ar-condicionado a 23°" width="260">
+  <img src="docs/demo.gif" alt="Demonstração: ajustando a temperatura do ar, ligando o WindFree, trocando de dispositivo e diminuindo o brilho da luz" width="440">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@ Widget do painel do KDE Plasma 6 para controlar dispositivos Samsung SmartThings
 - **Luzes:** liga/desliga, brilho e temperatura de cor.
 - **Som:** volume.
 - **Qualquer dispositivo com liga/desliga:** tomadas, TVs, etc.
-- **Painel:** mostra o valor principal do dispositivo escolhido (ex.: `23°`). Clique para abrir o controle e use o botão do meio para ligar/desligar.
+- **Painel:** <img src="docs/screenshots/panel.png" alt="Widget no painel" height="20"> mostra o valor principal do dispositivo escolhido (ex.: `23°`). Clique para abrir o controle e use o botão do meio para ligar/desligar.
 - **Login com a conta Samsung:** o acesso é renovado sozinho, sem precisar trocar o token a cada 24 horas.
 
 ## Requisitos
@@ -111,14 +111,15 @@ test/
   mock_server.py         API falsa do SmartThings (dispositivos de exemplo)
   harness.qml            exercita o popup contra a API falsa e tira capturas
   config-harness.qml     renderiza a tela de configurações
-  run.sh                 roda tudo; com --docs atualiza docs/screenshots
+  demo.qml               roteiro do GIF animado do README
+  run.sh                 roda tudo; com --docs atualiza docs/screenshots e docs/demo.gif
 ```
 
 Para testar sem conta nem dispositivos:
 
 ```sh
 ./test/run.sh            # capturas em test/out
-./test/run.sh --docs     # atualiza as imagens deste README
+./test/run.sh --docs     # atualiza as imagens e o GIF deste README (o GIF precisa do ffmpeg)
 ```
 
 Para aplicar mudanças no widget instalado:
